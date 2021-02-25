@@ -1,0 +1,326 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-25T03:09:36.420Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2281000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.BeforeAction.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Validate element in the Page",
+        "description": "",
+        "id": "acceptance-testing-to-validate-elements-are-present.;validate-element-in-the-page",
+        "after": [
+          {
+            "result": {
+              "duration": 969000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.AfterAction.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15824000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Navigate to home page \"https://www.autotrader.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.autotrader.com/\"",
+                  "offset": 22
+                }
+              ],
+              "location": "steps.AutoTradingHomePageSteps.navigate_to_home_page_of(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(@title,\u0027Browse by Make\u0027)]\"}\n  (Session info: chrome\u003d88.0.4324.190)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESNA-PC\u0027, ip: \u002710.0.0.11\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_101\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\\Users\\Puja\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56569}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 9c59d130043dbeb423b057a0aa8e07eb\n*** Element info: {Using\u003dxpath, value\u003d//*[contains(@title,\u0027Browse by Make\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.isEnabled(Unknown Source)\r\n\tat pages.actions.AutoTradingHomePageAction.browsebyMakeLink(AutoTradingHomePageAction.java:22)\r\n\tat steps.AutoTradingHomePageSteps.click_on_the_Links_and_check_links_are_enabled(AutoTradingHomePageSteps.java:27)\r\n\tat ✽.Click on the Links and check links are enabled(file:///C:/Users/Puja/selenium/NewSelenium/AutoTradingCode/src/test/resources/features/AutoTraderHomePage.feature:7)\r\n",
+              "duration": 35083000000,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "Click on the Links and check links are enabled",
+            "match": {
+              "location": "steps.AutoTradingHomePageSteps.click_on_the_Links_and_check_links_are_enabled(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Links"
+                ]
+              },
+              {
+                "cells": [
+                  "Browse by Make"
+                ]
+              },
+              {
+                "cells": [
+                  "Browse by Style"
+                ]
+              },
+              {
+                "cells": [
+                  "Advanced Search"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Check the Search button",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "Check the drop downs",
+            "match": {
+              "location": "steps.AutoTradingHomePageSteps.check_the_drop_downs()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@HomePage"
+          }
+        ]
+      }
+    ],
+    "name": "Acceptance testing to validate elements are present.",
+    "description": "In order to validate the home page elements are present \nwe will do acceptance testing",
+    "id": "acceptance-testing-to-validate-elements-are-present.",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AutoTraderHomePage.feature",
+    "tags": [
+      {
+        "name": "@HomePage",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-25T03:10:30.699Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2408000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.BeforeAction.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Enter value into the fields",
+        "description": "",
+        "id": "acceptance-testing-for-advanced-serch-page;enter-value-into-the-fields",
+        "after": [
+          {
+            "result": {
+              "duration": 489000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.AfterAction.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "Navigate to home page \"https://www.autotrader.com/\" of AutoTrading website",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "Click on the Advanced Search Button link and page navigate to \"Search for Cars For Sale Online - Find a Car at Autotrader\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Search for Cars For Sale Online - Find a Car at Autotrader",
+                  "offset": 63
+                }
+              ],
+              "location": "steps.AdvancedSearchPageSteps.click_on_the_Advanced_Search_Button_link_and_page_navigate_to(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "Enter the ZipCode in text box",
+            "match": {
+              "location": "steps.AdvancedSearchPageSteps.enter_the_ZipCode_in_text_box()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Select the Certified Check Box under Condition",
+            "match": {
+              "location": "steps.AdvancedSearchPageSteps.select_the_Certified_Check_Box_under_Condition()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Select the Convertible check box under Style",
+            "match": {
+              "location": "steps.AdvancedSearchPageSteps.select_the_Convertible_check_box_under_Style()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "Update the Year drop down menus as follows: select \"2017\" as From year and select \"2020\" as To year",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2017",
+                  "offset": 52
+                },
+                {
+                  "val": "2020",
+                  "offset": 83
+                }
+              ],
+              "location": "steps.AdvancedSearchPageSteps.update_the_Year_drop_down_menus_as_follows_select_as_From_year_and_select_as_To_year(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "Select Make as BMW under Make, Model \u0026 Trim section",
+            "match": {
+              "location": "steps.AdvancedSearchPageSteps.select_Make_as_BMW_under_Make_Model_Trim_section()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Click on the Search button",
+            "match": {
+              "location": "steps.AdvancedSearchPageSteps.click_on_the_Search_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "Page Navigate to \"Certified BMW Convertibles for Sale in Alpharetta, GA 30004 - Autotrader\" Page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Certified BMW Convertibles for Sale in Alpharetta, GA 30004 - Autotrader",
+                  "offset": 18
+                }
+              ],
+              "location": "steps.BMWConvertiblesSearchPageSteps.page_Navigate_to_Page(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "Assert that you see only BMW cars in the results page",
+            "match": {
+              "location": "steps.BMWConvertiblesSearchPageSteps.assert_that_you_see_only_BMW_cars_in_the_results_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AdvancedSearch"
+          },
+          {
+            "name": "@AdvancedSearch-Positive"
+          }
+        ]
+      }
+    ],
+    "name": "Acceptance testing for Advanced serch page",
+    "description": "",
+    "id": "acceptance-testing-for-advanced-serch-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/advancedSearch.feature",
+    "tags": [
+      {
+        "name": "@AdvancedSearch",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
